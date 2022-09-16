@@ -1,5 +1,5 @@
 const express = require('express');
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 //     res.send('Hello World!')
    
 // })
-const uri = 'mongodb+srv://AniKal25:Bidemikalu25@cluster0.nhrejo8.mongodb.net/?retryWrites=true&w=majority'
+//const uri = 'mongodb+srv://AniKal25:Bidemikalu25@cluster0.nhrejo8.mongodb.net/?retryWrites=true&w=majority'
 app.use('/', require('./routes'))
 async function connect() {
     try {
