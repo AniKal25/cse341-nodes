@@ -1,14 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 // app.get('/', (req, res) => {
 //     res.send('Hello World!')
    
 // })
 const uri = 'mongodb+srv://AniKal25:Bidemikalu25@cluster0.nhrejo8.mongodb.net/?retryWrites=true&w=majority'
-// app.use('/', require('./routes'))
+app.use('/', require('./routes'))
 async function connect() {
     try {
         await mongoose.connect(uri);
@@ -24,6 +24,6 @@ connect();
 //     console.log(`Example app listening on ${port}`)
    
 // })
-app.listen(8000, () => {
-    console.log("Server started on port 8000")
+app.listen(PORT, () => {
+    console.log(`Server started on port ${PORT}`)
 })

@@ -1,26 +1,26 @@
 {
-    "contact": {
+    "contacts": [{
         "firstName": "Blessing",
         "lastName":  "Ugwuoti",
         "email": "blessingpretty@yahoo.com",
         "favoriteColor": "Blue",
         "birthday": "2/10/1999"
     },
-    "contact2": {
+    {
         "firstName": "Akudo",
         "lastName":  "Obanye",
         "email": "mavisgold@gmail.com",
         "favoriteColor": "Black",
         "birthday": "12/12/1985"
     },
-    "contact3": {
+    {
         "firstName": "Egbe",
         "lastName":  "Eboreime",
         "email": "Egbeeboreime@yahoo.com",
         "favoriteColor": "Yellow",
         "birthday": "23/12/1995"
 
-    }
+    }]
 
 
 }
