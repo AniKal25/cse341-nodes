@@ -40,6 +40,18 @@ content-type: application/json
 }
 
 ###
+POST http://localhost:8080/contacts  HTTP/1.1
+content-type: application/json 
+
+{
+    "firstName":"Dele",
+    "lastName": "Adebisi",
+    "email": "debus@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "20/02/1997"
+}
+
+###
 PUT https://cse341-anita-pa2.onrender.com/contacts/632b2a9a1f776fedbcc34910 HTTP/1.1
 content-type: application/json
 
@@ -52,5 +64,21 @@ content-type: application/json
 }
 
 ###
+PUT http://localhost:8080/contacts/632b2a9a1f776fedbcc34910 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Christiana",
+    "lastName": "Ngozi",
+    "email": "cngozi@yahoo.com",
+    "favoriteColor": "Brown",
+    "birthday": "25/07/1989"
+}
+
+###
 DELETE https://cse341-anita-pa2.onrender.com/contacts/632b6ca3f1ac97ba7cbaf145 HTTP/1.1
+content-type: application/json
+
+###
+DELETE http://localhost:8080/contacts/632b6ca3f1ac97ba7cbaf145 HTTP/1.1
 content-type: application/json
