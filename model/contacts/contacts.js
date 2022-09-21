@@ -8,13 +8,14 @@ const contactSchema = mongoose.Schema( {
         type: String
     },
     email:{
-        type: String
+        type: String,
+        required: true
     },
     favoriteColor:{
         type: String
     },
     birthday:{
-        type: Date
+        type: String
     },
 
 }, {

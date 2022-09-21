@@ -25,4 +25,48 @@ const getContactById = async(req, res) => {
     }    
 
 }
- module.exports = {getAllContacts, getContactById}
+
+const newContact = async(req, res) => {
+    try {
+        // Get all contacts from the database
+        const contact = req.body;
+        console.log(contact);
+        const result = await Contacts.create(contact)
+        //Return the response
+        res.status(201).send('Your contact has been created')
+    } catch (error) {
+        console.log(error)
+        
+    }   
+} 
+
+const updateContact = async(req, res) => {
+    try {
+        const id = req.params.id;
+        // Get all contacts from the database
+        const contact = req.body;
+        console.log(contact);
+        const result = await Contacts.findByIdAndUpdate(id, contact)
+        //Return the response
+        res.status(201).send('Your contact has been updated')
+    } catch (error) {
+        console.log(error)
+        
+    }   
+}
+
+const deleteContact = async(req, res) => {
+    try {
+        const id = req.params.id;
+        // Get all contacts from the database
+        const contact = req.body;
+        console.log(contact);
+        const result = await Contacts.findByIdAndDelete(id, contact)
+        //Return the response
+        res.status(201).send('Your contact has been deleted')
+    } catch (error) {
+        console.log(error)
+        
+    }   
+}
+ module.exports = {getAllContacts, getContactById, newContact, updateContact, deleteContact}
