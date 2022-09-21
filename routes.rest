@@ -28,7 +28,7 @@ GET https://cse341-anita-pa2.onrender.com/contacts/6323565594c26c2157fcfd44
 
 
 ###
-POST http://localhost:8080/contacts HTTP/1.1
+POST https://cse341-anita-pa2.onrender.com/contacts HTTP/1.1
 content-type: application/json 
 
 {
@@ -40,7 +40,7 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:8080/contacts/632b2a9a1f776fedbcc34910 HTTP/1.1
+PUT https://cse341-anita-pa2.onrender.com/contacts/632b2a9a1f776fedbcc34910 HTTP/1.1
 content-type: application/json
 
 {
@@ -52,5 +52,5 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:8080/contacts/632b6ca3f1ac97ba7cbaf145 HTTP/1.1
+DELETE https://cse341-anita-pa2.onrender.com/contacts/632b6ca3f1ac97ba7cbaf145 HTTP/1.1
 content-type: application/json
