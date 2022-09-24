@@ -32,9 +32,9 @@ POST https://cse341-anita-pa2.onrender.com/contacts HTTP/1.1
 content-type: application/json 
 
 {
-    "firstName":"Christiana",
+    "firstName":"Christy",
     "lastName": "Ngozi",
-    "email": "cngozi@yahoo.com",
+    "email": "chngozi@yahoo.com",
     "favoriteColor": "Black",
     "birthday": "25/07/1989"
 }
@@ -59,7 +59,7 @@ content-type: application/json
     "firstName":"Christiana",
     "lastName": "Ngozi",
     "email": "cngozi@yahoo.com",
-    "favoriteColor": "Brown",
+    "favoriteColor": "White",
     "birthday": "25/07/1989"
 }
 
@@ -76,7 +76,7 @@ content-type: application/json
 }
 
 ###
-DELETE https://cse341-anita-pa2.onrender.com/contacts/632b6ca3f1ac97ba7cbaf145 HTTP/1.1
+DELETE https://cse341-anita-pa2.onrender.com/contacts/632b7c3f9726e771e69d289c HTTP/1.1
 content-type: application/json
 
 ###
