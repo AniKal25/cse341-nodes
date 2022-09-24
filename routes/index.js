@@ -10,8 +10,9 @@ const swaggerDocument = require('./swagger.json');
 
 routes.use('/contacts', contacts);
 
-routes.use('/api-docs', swaggerUi.serve);
-routes.get('/api-docs', swaggerUi.setup(swaggerDocument, {explorer: true}));
+// routes.use('/api-docs', swaggerUi.serve);
+// routes.get('/api-docs', swaggerUi.setup(swaggerDocument, {explorer: true}));
+routes.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 routes.get('/', (req, res) => {
     res.send('Health check');
